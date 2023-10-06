@@ -198,3 +198,27 @@ header {
   font-variant: initial;
   font-size: 1.5em;
 }
+
+.beautiful-paragraph {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.beautiful-heading {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.calendar-list ul {
+  margin-bottom: 40px;
+}
