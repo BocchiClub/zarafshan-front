@@ -51,7 +51,7 @@ header {
 }
 
 .main-list {
-  float: right;
+  float: left;
   font-variant: small-caps;
   list-style-type: none;
   margin-top: 20px;
@@ -59,25 +59,6 @@ header {
 }
 
 /* Responsive layout */
-@media screen and (max-width: 1000px) {
-  .main-list {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .main-list {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .main-list {
-    font-size: 7px;
-    font-weight: bold;
-  }
-}
-
 .main-list-item {
   display: inline-block;
 }
@@ -141,6 +122,7 @@ header {
 
 .footer .footer-content .about .contact span {
   display: block;
+  margin-bottom: 8px;
   font-size: 1.1em;
 }
 
