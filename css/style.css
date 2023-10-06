@@ -162,6 +162,36 @@ header {
   }
 }
 
+/* FAMOUS PLACES PAGE */
+/* IMAGE GALLERY */
+.image-gallery {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.des {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  margin-top: 10px;
+  padding: 0 7px;
+  width: 290px;
+}
+
 /* FOOTER */
 .footer {
   background: #363530;
