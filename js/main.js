@@ -1,7 +1,19 @@
 var mySwiper;
 
 function initSwiper() {
-    var slidesPerView = window.innerWidth > 768 ? 5 : 1; // Устанавливаем количество слайдов в зависимости от размера экрана
+    var slidesPerView;
+
+    if (window.innerWidth > 1900) {
+        slidesPerView = 5;
+    } else if (window.innerWidth > 1500) {
+        slidesPerView = 4;
+    } else if (window.innerWidth > 1200) {
+      slidesPerView = 3;
+    } else if (window.innerWidth > 1000) {
+      slidesPerView = 2;
+    } else {
+        slidesPerView = 1;
+    }
 
     mySwiper = new Swiper(".swiper-container", {
         slidesPerView: slidesPerView,
