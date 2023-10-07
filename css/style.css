@@ -195,10 +195,22 @@ header {
 
 /* FOOTER */
 .footer {
-  background: #363530;
+  background: #303036;
   color: #d3d3d3;
   height: 200px;
-  position: top;
+  position: relative;
+}
+
+.footer .footer-bottom {
+  background-color: #343a40;
+  color: #686868;
+  text-align: center;
+  height: 50px;
+  /* position: absolute; */
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 20px;
 }
 
 .footer .footer-content {
