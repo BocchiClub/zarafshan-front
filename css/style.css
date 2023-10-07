@@ -212,13 +212,10 @@ header {
   margin-right: 10%;
 }
 
-.gallery {
-  border: 1px solid #ccc;
-}
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .des {
@@ -230,6 +227,8 @@ header {
   margin-top: 10px;
   padding: 0 7px;
   width: 290px;
+  height: 450px;
+  border: 1px solid #ccc;
 }
 
 /* FOOTER */
