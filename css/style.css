@@ -60,6 +60,25 @@ header {
 }
 
 /* Responsive layout */
+@media screen and (max-width: 1000px) {
+  .main-list {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-list {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-list {
+    font-size: 7px;
+    font-weight: bold;
+  }
+}
+
 .main-list-item {
   display: inline-block;
 }
@@ -189,26 +208,22 @@ header {
   }
 }
 
-/* FAMOUS PLACES PAGE */
 /* IMAGE GALLERY */
 .image-gallery {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .gallery {
   border: 1px solid #ccc;
-  margin-top: 10px;
-  padding: 0 7px;
-  width: 290px;
 }
 
 .gallery img {
   width: 100%;
   height: auto;
-  position: relative;
 }
 
 .des {
@@ -224,10 +239,22 @@ header {
 
 /* FOOTER */
 .footer {
-  background: #363530;
+  background: #303036;
   color: #d3d3d3;
   height: 200px;
-  position: top;
+  position: relative;
+}
+
+.footer .footer-bottom {
+  background-color: #343a40;
+  color: #686868;
+  text-align: center;
+  height: 50px;
+  /* position: absolute; */
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 20px;
 }
 
 .footer .footer-content {
