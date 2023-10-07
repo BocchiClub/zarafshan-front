@@ -236,8 +236,8 @@ header {
 .footer {
   background: #303036;
   color: #d3d3d3;
-  height: 200px;
-  position: relative;
+  height: 140px;
+  position: bottom;
 }
 
 .footer .footer-bottom {
@@ -253,7 +253,7 @@ header {
 }
 
 .footer .footer-content {
-  height: 200px;
+  height: 140px;
   display: flex;
 }
 
