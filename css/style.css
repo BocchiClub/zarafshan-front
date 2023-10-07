@@ -94,6 +94,32 @@ header {
   font-variant: small-caps;
 }
 
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text{
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  margin-left: 20px; /* Добавим отступ между изображением и текстом */
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+  float: right;
+  display: flex; /* Используем flexbox для размещения изображения и текста в ряд */
+  align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+}
+
 /* MAIN CONTENT */
 .page-wrapper {
   min-height: 100%;
@@ -169,17 +195,20 @@ header {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
+
 }
 
 .gallery {
   border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 0 7px;
+  width: 290px;
 }
 
 .gallery img {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .des {
@@ -224,7 +253,7 @@ header {
   text-align: center;
 }
 
-.logo-text {
+.footer-text {
   font-variant: initial;
   font-size: 1.5em;
 }
