@@ -16,8 +16,8 @@ jobs:
          username: ${{ secrets.VPS_USERNAME }}
          key: ${{ secrets.SSH_PRIVATE_KEY }}
          port: ${{ secrets.VPS_SSH_PORT }}
+         rm: true
+         target: /srv/www/
          script: |
-           rm -rf /srv/www/*
-           cp -r ./* /srv/www/
            sudo /usr/bin/systemctl reload nginx
 
