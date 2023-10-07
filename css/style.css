@@ -15,6 +15,7 @@ body {
 .main {
   margin: auto;
   max-width: 1200px;
+  padding: 10px;
 }
 
 header {
@@ -60,6 +61,25 @@ header {
 }
 
 /* Responsive layout */
+@media screen and (max-width: 1000px) {
+  .main-list {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-list {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-list {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
 .main-list-item {
   display: inline-block;
 }
@@ -92,6 +112,26 @@ header {
   color: white;
   font-size: 4vw;
   font-variant: small-caps;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text{
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  margin-left: 20px; /* Добавим отступ между изображением и текстом */
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+  float: right;
+  display: flex; /* Используем flexbox для размещения изображения и текста в ряд */
+  align-items: center; /* Выравниваем элементы по вертикали */
 }
 
 /* MAIN CONTENT */
@@ -163,7 +203,6 @@ header {
   }
 }
 
-/* FAMOUS PLACES PAGE */
 /* IMAGE GALLERY */
 .image-gallery {
   box-sizing: border-box;
@@ -236,7 +275,7 @@ header {
   text-align: center;
 }
 
-.logo-text {
+.footer-text {
   font-variant: initial;
   font-size: 1.5em;
 }
