@@ -198,6 +198,7 @@ header {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .swiper-container {                    /** swiper-container **/
@@ -231,7 +232,31 @@ header {
 .responsive {
   height: 470px;
   width: 305px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+}
+
+.button-slider {
+  display: flex;
+  flex-direction: row;
+}
+.last-slider {
+  width: 50px;
+  margin-left: 0;
+  margin-right: auto;
+  z-index: 99;
+}
+.next-slider {
+  width: 50px;
+  margin-right: 0;
+  margin-left: auto;
+  z-index: 99;
+}
+.slide-text {
+  margin-left: 0;
+}
+.last-slider:hover,
+.next-slider:hover {
+  cursor: pointer;
 }
 
 /* FOOTER */
