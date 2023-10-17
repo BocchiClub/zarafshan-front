@@ -46,7 +46,7 @@ function loadCSV() {
             newsItem.className = "news-item";
   
             const dateElement = document.createElement("p");
-            dateElement.textContent = "Дата: " + news.Дата;
+            dateElement.textContent = news.Дата;
   
             const descriptionElement = document.createElement("h3");
             const newsLink = document.createElement("a");
