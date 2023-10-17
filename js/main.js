@@ -24,9 +24,9 @@ function initSwiper() {
             nextEl: ".next-slider",
             prevEl: ".last-slider",
         },
-        // autoplay: {
-        //     delay: 3000,
-        // },
+        autoplay: {
+            delay: 3000,
+        },
         keyboard: {
             enabled: true,
             onlyInViewport: false,
