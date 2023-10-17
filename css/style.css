@@ -89,10 +89,13 @@ header {
   color: white;
   border: 1px solid transparent;
   padding: 5px 20px;
-  transition: 0.7s ease;
 }
 
-.main-list-item a:hover {
+.main-list-item li {
+  transition: 0.3s ease;
+}
+
+.main-list-item li:hover {
   background-color: rgb(89, 73, 46);
 }
 
