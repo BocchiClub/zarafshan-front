@@ -41,22 +41,15 @@
   </header>
 
   <div class="page-wrapper">
-    <div class="history">
-      <article>
-        <h2>Breaking News</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis enim eget augue semper mollis. Nulla id
-          nulla in ligula posuere finibus. Donec eget nisl ligula. Phasellus hendrerit ante nec nulla iaculis, nec
-          bibendum orci posuere.</p>
-        <a href="#">Read more</a>
-      </article>
-      <article>
-        <h2>Upcoming Events</h2>
-        <p>Quisque ac semper risus. Suspendisse sollicitudin accumsan ligula, in maximus ex fringilla vitae. Nullam
-          malesuada nisi at ligula ultrices faucibus. Proin maximus semper nulla, et hendrerit magna feugiat eu. Nulla
-          consequat imperdiet quam.</p>
-        <a href="#">Read more</a>
-      </article>
-      <img src="images/web-design.jpg" class="centered-image">
+    <div class="news-grid" id="news-grid">
+      <div class="news-column" id="organs">
+        <h2>Органы власти</h2>
+        <hr>
+      </div>
+      <div class="news-column" id="society">
+        <h2>Общество</h2>
+        <hr>
+      </div>
     </div>
   </div>
 
@@ -82,6 +75,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
