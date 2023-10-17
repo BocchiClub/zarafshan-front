@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  background-color: #ebe5dd;
+  background-color: #ffffff;
 }
 
 /* HEADER */
@@ -137,26 +137,24 @@ header {
 /* MAIN CONTENT */
 .page-wrapper {
   min-height: 100%;
+  padding: 1% 20% 1% 20%;
+}
+
+@media screen and (max-width: 800px) {
+  .page-wrapper {
+    min-height: 100%;
+    padding: 1% 10% 1% 10%;
+  }
 }
 
 /* HISTORY */
-.history {
-  margin: 20px;
-}
-
 .history-para {
-  padding: 13px;
+  padding: 13px 0 13px 0;
 }
 
 .history-heading1 {
-  margin: 2px;
   padding-top: 20px;
   text-align: center;
-}
-
-.history-heading2 {
-  margin: 2px;
-  padding-top: 20px;
 }
 
 .history-list {
@@ -167,18 +165,10 @@ header {
   text-decoration: none;
 }
 
-/* IMAGE GALLERY */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 20%;
   max-width: 20%;
-  padding: 0 4px;
 }
 
 .column img {
@@ -208,8 +198,6 @@ header {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .swiper-container {                    /** swiper-container **/
@@ -220,6 +208,12 @@ header {
 
 .swiper-wrapper {
   height: 0;
+}
+
+.swiper-slide {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .gallery img {
@@ -237,8 +231,7 @@ header {
 .responsive {
   height: 470px;
   width: 305px;
-  margin-bottom: 40px;
-  border: 1px solid #ccc;
+  margin-bottom: 40px;2
 }
 
 /* FOOTER */
