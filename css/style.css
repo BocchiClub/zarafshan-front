@@ -259,6 +259,42 @@ header {
   cursor: pointer;
 }
 
+/* NEWS */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+  grid-gap: 40px; /* Пространство между элементами */
+}
+
+.news-item {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.news-item a {
+  color: #333; /* Задайте желаемый цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.news-item a:hover {
+  color: #b7b400;
+}
+
+.news-item p {
+  margin: 0;
+  color: #848484;
+}
+
+@media screen and (max-width: 800px) {
+  .news-grid {
+    grid-template-columns: 1fr; /* Две колонки равной ширины */
+  }
+
+  .news-column {
+    margin-bottom: 20px; /* Пространство между колонками на мобильных устройствах */
+  }
+}
+
 /* FOOTER */
 .footer {
   background: #303036;
