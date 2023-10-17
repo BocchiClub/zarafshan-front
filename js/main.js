@@ -4,11 +4,11 @@ function initSwiper() {
     var slidesPerView;
 
     if (window.innerWidth > 1900) {
-        slidesPerView = 5;
+        slidesPerView = 3;
     } else if (window.innerWidth > 1500) {
-        slidesPerView = 4;
+        slidesPerView = 3;
     } else if (window.innerWidth > 1200) {
-      slidesPerView = 3;
+      slidesPerView = 2;
     } else if (window.innerWidth > 1000) {
       slidesPerView = 2;
     } else {
@@ -24,9 +24,9 @@ function initSwiper() {
             nextEl: ".next-slider",
             prevEl: ".last-slider",
         },
-        autoplay: {
-            delay: 3000,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        // },
         keyboard: {
             enabled: true,
             onlyInViewport: false,
