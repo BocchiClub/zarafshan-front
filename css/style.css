@@ -19,9 +19,10 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.143), #333),
     url(../images/main.jpg);
   height: 100vh;
+  /* border-bottom: 1px solid #d1a954; */
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +36,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #b4832a;
+  background-color: #d1a954;
   min-width: 230px;
   list-style: none;
   padding: 0;
@@ -144,6 +145,7 @@ header {
 .page-wrapper {
   min-height: 100%;
   padding: 1% 20% 1% 20%;
+  background-color: #333;
 }
 
 @media screen and (max-width: 800px) {
@@ -157,11 +159,17 @@ header {
 .history-para {
   font-size: 1.2em;
   padding: 13px 0 13px 0;
+  color: #989898;
 }
 
 .history-heading1 {
   padding: 20px;
   text-align: center;
+  color: #d1a954;
+}
+
+.history-heading2 {
+  color: #d1a954;
 }
 
 .history-list {
@@ -241,7 +249,7 @@ header {
   }
 }
 
-/* IMAGE GALLERY */
+/* TOURISM */
 .image-gallery {
   box-sizing: border-box;
   display: flex;
@@ -263,6 +271,7 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
+  color: #989898;
 }
 
 .gallery img {
@@ -286,6 +295,7 @@ header {
 .button-slider {
   display: flex;
   flex-direction: row;
+  color: #d1a954;
 }
 .last-slider {
   width: 50px;
@@ -315,8 +325,9 @@ header {
 }
 
 .news-item {
+  color: #989898;
   margin: 20px 0;
-  border-top: 1px solid #d7d7d7; /* Замените #000 на цвет рамки по вашему выбору */
+  border-top: 1px solid #989898; /* Замените #000 на цвет рамки по вашему выбору */
 }
 
 .news-item img {
@@ -324,22 +335,25 @@ header {
 }
 
 .news-item a {
-  color: #333; /* Задайте желаемый цвет текста */
+  color: #989898;
   text-decoration: none; /* Убираем подчеркивание */
 }
 
 .news-item a:hover {
-  color: #b7b400;
+  color: #d1a954;
 }
 
 .news-item p {
   margin: 0;
-  color: #848484;
+  padding: 10px 0;
+  font-weight: 100;
 }
 
 .news-column h2 {
   font-size: 1.5em;
-  padding-top: 20px;
+  padding: 20px 0;
+  color: #d1a954;
+  border-bottom: 1px solid #d1a954;;
 }
 
 @media screen and (max-width: 800px) {
