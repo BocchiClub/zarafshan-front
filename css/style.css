@@ -186,15 +186,16 @@ header {
   font-weight: 600;
   border-bottom: 1px solid #E0E0E0;
   padding: 40px 0 20px 0;
+  color: #989898;
 }
 
 .calendar-list li {
   list-style: none;
   font-size: 1.2em;
-  color: #888; /* Серый цвет */
   padding: 50px 0 20px 0;
   margin: 0;
-  border-bottom: 1px solid #E0E0E0;;
+  border-bottom: 1px solid #e0e0e03a;
+  color: #989898;
 }
 
 .calendar-item .event-time {
@@ -206,15 +207,16 @@ header {
 .calendar-item .event-title {
   font-weight: 550; /* Жирный шрифт для заголовка мероприятия */
   padding-bottom: 10px;
+  
 }
 
 .calendar-item .event-title a {
   text-decoration: none; /* Убираем подчеркивание */
-  color: #333;
+  color: #989898;
 }
 
 .calendar-item .event-title a:hover {
-  color: #b7b400;
+  color: #d1a954;
 }
 
 .calendar-item .event-location {
