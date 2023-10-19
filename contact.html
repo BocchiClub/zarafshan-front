@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -40,7 +38,38 @@
       <span class="heading">Контакты</span>
     </div>
   </header>
-
+  <div class="page-wrapper">
+    <div class="contacts" id=contacts>
+      <h1 class="history-heading1">Напишите нам!</h1>
+      <div class="form-send">
+        <div class="contacts-text">
+          <div class="numbers">
+            <div class="contact-text">+7 (812) 123-45-55</div>
+            <div class="contact-text">+7 (812) 123-45-66</div>
+          </div>
+          <div class="places">
+            <div class="contact-text"> info@zarafshan.uz </div>
+            <div class="contact-text"> 2 микрорайон, 8 строение</div>
+          </div>
+        </div>
+        <form action="php/mail.php" method="post" class="form-text-input">
+          <div class="contact-form">
+            <textarea placeholder='Имя' name='name' class="form-input" required></textarea>
+            <textarea placeholder='Фамилия' name='lasname' class="form-input"></textarea>
+            <textarea placeholder='Телефон' name='phone' class="form-input"></textarea>
+            <textarea placeholder='E-mail' name='email' class="form-input" required></textarea>
+            <textarea placeholder='Сообщение' name='message' class="form-input-mess" required></textarea>
+          </div>
+          <div class="button-info">
+            <button type='submit' value='Отправить' class="button">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- form-send -->
+    </div>
+  </div>
   <footer>
     <div class="footer">
       <div class="footer-content">
