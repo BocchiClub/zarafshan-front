@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -43,42 +41,11 @@
 
   <div class="page-wrapper">
     <div class="history">
-      <h1 class="history-heading1">
-        Грядущие и прошедшие события города
-      </h1>
-      <hr />
-
-      <ul class="calendar-list events">
-        <li>
-          <h3 class="beautiful-heading">
-            <a class="stops-link"
-              href="https://uz.sputniknews.ru/20201222/Pyanaya-draka-v-Zarafshane-telo-muzhchiny-nashli-u-roschi-15650024.html"
-              target="_blank">Пьяная драка</a> в Зарафшане: тело мужчины нашли у рощи
-          </h3>
-          <p class="beautiful-paragraph">
-            ЗАРАФШАН, 22 дек - Sputnik. В Зарафшане было найдено тело мужчины без видимых повреждений, сообщают в
-            Следственном департаменте.
-          </p>
-        </li>
-        <li>
-          <h3 class="beautiful-heading">Грядущий Рамзан-хайит в Зарафшане с раздачей плова обещает быть ярким и
-            вкусным событием!</h3>
-          <p class="beautiful-paragraph">
-            Зарафшан, 10 окт - В преддверии одного из главных мусульманских праздников – Рамзан-хайта, жители
-            Зарафшана уже с нетерпением ожидают праздника и торжественных мероприятий, которые запланированы на этот
-            знаменательный день. Но в этом году Зарафшан готовится порадовать своих жителей непривычной и вкусной
-            раздачей.
-          </p>
-        </li>
-        <li>
-          <h3 class="beautiful-heading">У Зарафшана <a class="stops-link"
-              href="https://uz.sputniknews.ru/20190512/U-Zarafshana-poyavitsya-gorod-pobratim-v-SShA-11473348.html"
-              target="_blank">появится</a> город-побратим в США</h3>
-        </li>
-      </ul>
-
+      <h1 class="history-heading1">Анонсы мероприятий</h1>
+      <div id="events-container"></div>
     </div>
   </div>
+
   <footer>
     <div class="footer">
       <div class="footer-content">
@@ -101,6 +68,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/events.js"></script>
 </body>
 
 </html>
