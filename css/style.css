@@ -160,7 +160,7 @@ header {
 }
 
 .history-heading1 {
-  padding-top: 20px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -170,6 +170,47 @@ header {
 
 .history-list a {
   text-decoration: none;
+}
+
+/* Calendar */
+.calendar-heading-date {
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 40px 0 20px 0;
+}
+
+.calendar-list li {
+  list-style: none;
+  font-size: 1.2em;
+  color: #888; /* Серый цвет */
+  padding: 30px 0;
+  margin: 0;
+  border-bottom: 1px solid #E0E0E0;;
+}
+
+.calendar-item .event-time {
+  font-weight: 300; /* Легкий шрифт для времени */
+  font-size: 0.8em;
+  padding: 10px 0;
+}
+
+.calendar-item .event-title {
+  font-weight: 600; /* Жирный шрифт для заголовка мероприятия */
+  padding-bottom: 10px;
+}
+
+.calendar-item .event-title a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #333;
+}
+
+.calendar-item .event-title a:hover {
+  color: #b7b400;
+}
+
+.calendar-item .event-location {
+  font-weight: 200; /* Жирный шрифт для заголовка мероприятия */
 }
 
 /* Create four equal columns that sits next to each other */
@@ -296,6 +337,11 @@ header {
   color: #848484;
 }
 
+.news-column h2 {
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .news-grid {
     grid-template-columns: 1fr; /* Две колонки равной ширины */
@@ -374,11 +420,6 @@ header {
   margin-bottom: 10px;
   margin-top: 30px;
 }
-
-.calendar-list ul {
-  margin-bottom: 40px;
-}
-
 .centered-image {
   display: flex;
   justify-content: center;
