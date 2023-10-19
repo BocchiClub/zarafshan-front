@@ -37,11 +37,11 @@ header {
   display: none;
   position: absolute;
   background-color: #d1a954;
+  border: #d1a954;
   min-width: 230px;
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid #ddd;
 }
 
 .dropdown-content li {
@@ -97,8 +97,20 @@ header {
   transition: 0.3s ease;
 }
 
+.main-list-item li:hover a {
+  color: #d1a954;
+}
+
 .main-list-item li:hover {
-  background-color: rgb(89, 73, 46);
+  -webkit-text-stroke: #d1a954;
+    -moz-text-stroke: #d1a954;
+    -ms-text-stroke: #d1a954;
+    -o-text-stroke: #d1a954;
+    background-color: #fff;
+    color: #d1a954;
+    border: #fff;
+    font-weight: 700;
+    transition: 500ms;
 }
 
 /* TITLE */
@@ -143,7 +155,7 @@ header {
 
 /* MAIN CONTENT */
 .page-wrapper {
-  min-height: 100%;
+  /* min-height: 100%; */
   padding: 1% 20% 1% 20%;
   background-color: #333;
 }
@@ -368,6 +380,181 @@ header {
   }
 }
 
+/* CONTACTS */
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.form-send {
+  display: flex;
+  width: 100%;
+}
+.contacts-text {
+  width: 20%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 10%;
+}
+.contact-text {
+  margin-bottom: 20px;
+}
+.form-text-input {
+  width: 800px;
+}
+.contact-form {
+  display: grid;
+  grid-template-areas: "post-1 post-2 post-3 post-3"  
+                       "post-4 post-5 post-3 post-3"; 
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 25px;
+}
+.form-input, .form-input-mess {
+  background-color: #444;
+  border: 1px solid #616161; 
+  outline: none;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+.form-input {
+  height: 30px;
+}
+.form-input-mess {
+  grid-area: post-3;
+}
+.button-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info {
+  width: 50%;
+  font-size: 13px;
+  color: #989898;
+  margin-right: 40%;
+}
+
+.button {
+  -webkit-text-stroke: #fff;
+  -moz-text-stroke: #fff;
+  -ms-text-stroke: #fff;
+  -o-text-stroke: #fff;
+  background-color: #d1a954;
+  color: #fff;
+  border: #d1a954;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.05em;
+  width: 95px;
+  height: 40px;
+  outline: none;
+  transition: 500ms;
+}
+.button:hover {
+  -webkit-text-stroke: #d1a954;
+  -moz-text-stroke: #d1a954;
+  -ms-text-stroke: #d1a954;
+  -o-text-stroke: #d1a954;
+  background-color: #fff;
+  border: #fff;
+  color: #d1a954;
+  font-weight: 700;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .header,
+  .theater {
+  -webkit-text-stroke: #fff;
+  -moz-text-stroke: #fff;
+  -ms-text-stroke: #fff;
+  -o-text-stroke: #fff;
+  }
+  .theater-text {
+    margin-right:0;
+  }
+  .main-theater-text {
+    font-size: 50px;
+  }
+  .description-theater-text {
+    font-size: 18px;
+  }
+  .best-theater {
+    width: 100%;
+    height: 320px;
+  }
+  .form-send {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contacts-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin: 0;
+  }
+  .numbers, .places {
+    display: inline-block;
+    width: 50%;
+  }
+  .places {
+    text-align: right;
+  }
+  .form-text-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media(max-width:576px) {
+  .contact-text {
+    font-size: px;
+  }
+  .contact-form {
+  grid-template-areas: "post-1 post-2"  
+                       "post-4 post-5"
+                       "post-3 post-3"
+                       "post-3 post-3"; 
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+  .button-info {
+    flex-direction: column;
+  }
+  .info {
+    width: 250px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+/* MAP */
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Для центрирования текста */
+  margin-bottom: 40px;
+}
 /* FOOTER */
 .footer {
   background: #303036;
