@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Roboto Condensed, sans-serif;
 }
 
 html,
@@ -55,6 +55,7 @@ header {
 .main-list {
   float: left;
   font-variant: small-caps;
+  font-size: 20px;
   list-style-type: none;
   margin-top: 20px;
   margin-right: 10px;
@@ -99,10 +100,6 @@ header {
   background-color: rgb(89, 73, 46);
 }
 
-.active {
-  background-color: rgb(89, 73, 46);
-}
-
 /* TITLE */
 .title {
   position: absolute;
@@ -112,9 +109,15 @@ header {
 }
 
 .heading {
+  -webkit-text-stroke: 0.5px #d1a954;
+  -moz-text-stroke: 0.5px #d1a954;
+  -ms-text-stroke: 0.5px #d1a954;
+  -o-text-stroke: 0.5px #d1a954;
   color: white;
-  font-size: 4vw;
-  font-variant: small-caps;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .logo-img {
@@ -152,6 +155,7 @@ header {
 
 /* HISTORY */
 .history-para {
+  font-size: 1.2em;
   padding: 13px 0 13px 0;
 }
 
