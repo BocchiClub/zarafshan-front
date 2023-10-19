@@ -264,6 +264,68 @@ header {
 }
 
 /* TOURISM */
+
+.tourism {
+  padding: 20px 0;
+}
+
+.attraction {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.attraction img {
+  width: 350px;
+  height: 270px;
+  border: 1px solid #d1a954;
+  margin-right: 40px;
+  object-fit: cover;
+}
+
+.attraction-info {
+  max-width: 500px;
+}
+.attraction-info h2 {
+  color:#989898;
+  padding-bottom: 30px;
+}
+
+.attraction-info p {
+  color: #989898;
+  padding-bottom: 50px;
+}
+
+.attraction-info a {
+  color:#989898;
+  text-decoration: none;
+}
+
+.attraction-info a:hover {
+  color:#d1a954;
+}
+
+@media screen and (max-width: 1000px) {
+  .attraction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .attraction img {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .attraction-info {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d1a954;
+  }
+}
+
 .image-gallery {
   box-sizing: border-box;
   display: flex;
