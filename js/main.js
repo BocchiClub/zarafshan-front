@@ -8,9 +8,9 @@ function initSwiper() {
     } else if (window.innerWidth > 1500) {
         slidesPerView = 3;
     } else if (window.innerWidth > 1200) {
-      slidesPerView = 2;
+        slidesPerView = 2;
     } else if (window.innerWidth > 1000) {
-      slidesPerView = 2;
+        slidesPerView = 2;
     } else {
         slidesPerView = 1;
     }
