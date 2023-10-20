@@ -13,6 +13,10 @@ body {
 /* HEADER */
 
 .main {
+  -webkit-text-stroke: 0.5px #d1a954;
+  -moz-text-stroke: 0.5px #d1a954;
+  -ms-text-stroke: 0.5px #d1a954;
+  -o-text-stroke: 0.5px #d1a954;
   margin: auto;
   max-width: 1200px;
   padding: 10px;
