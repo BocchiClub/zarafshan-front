@@ -177,14 +177,11 @@ header {
   height: 50px;
   float: right;
   display: flex;
-  /* Используем flexbox для размещения изображения и текста в ряд */
   align-items: center;
-  /* Выравниваем элементы по вертикали */
 }
 
 /* MAIN CONTENT */
 .page-wrapper {
-  /* min-height: 100%; */
   padding: 1% 20% 1% 20%;
   background-color: #333;
 }
@@ -241,21 +238,18 @@ header {
 
 .calendar-item .event-time {
   font-weight: 300;
-  /* Легкий шрифт для времени */
   font-size: 0.8em;
   padding: 10px 0;
 }
 
 .calendar-item .event-title {
   font-weight: 550;
-  /* Жирный шрифт для заголовка мероприятия */
   padding-bottom: 10px;
 
 }
 
 .calendar-item .event-title a {
   text-decoration: none;
-  /* Убираем подчеркивание */
   color: #989898;
 }
 
@@ -265,10 +259,8 @@ header {
 
 .calendar-item .event-location {
   font-weight: 200;
-  /* Жирный шрифт для заголовка мероприятия */
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 20%;
   max-width: 20%;
@@ -280,7 +272,6 @@ header {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -288,7 +279,6 @@ header {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
@@ -297,7 +287,6 @@ header {
 }
 
 /* TOURISM */
-
 .tourism {
   padding: 20px 0;
 }
@@ -436,16 +425,13 @@ header {
 .news-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* Две колонки равной ширины */
   grid-gap: 40px;
-  /* Пространство между элементами */
 }
 
 .news-item {
   color: #989898;
   margin: 20px 0;
   border-top: 1px solid #989898;
-  /* Замените #000 на цвет рамки по вашему выбору */
 }
 
 .news-item img {
@@ -455,7 +441,6 @@ header {
 .news-item a {
   color: #989898;
   text-decoration: none;
-  /* Убираем подчеркивание */
 }
 
 .news-item a:hover {
@@ -479,12 +464,10 @@ header {
 @media screen and (max-width: 800px) {
   .news-grid {
     grid-template-columns: 1fr;
-    /* Две колонки равной ширины */
   }
 
   .news-column {
     margin-bottom: 20px;
-    /* Пространство между колонками на мобильных устройствах */
   }
 }
 
@@ -661,7 +644,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* Для центрирования текста */
   margin-bottom: 40px;
 }
 
