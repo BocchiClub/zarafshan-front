@@ -20,6 +20,8 @@ body {
   margin: auto;
   max-width: 1200px;
   padding: 10px;
+  height: 50px;
+  border-bottom: 1px solid #d1a954;
 }
 
 header {
@@ -744,4 +746,50 @@ header {
 .footer-text {
   font-variant: initial;
   font-size: 1.5em;
+}
+
+/* Новости */
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-title {
+  color: #d1a954;
+  font-size: 24px;
+  margin: 30px 0px;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-date {
+  color: #989898;
+  font-weight: 100;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+.news-description, .news-topic {
+  color: #989898;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.news-description {
+  font-weight: 600;
+  border-bottom: 1px solid #686868;
+}
+
+.news-main-header div {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.143), #333), */
+    /* url(../images/main.jpg); */
+  /* height: 100vh; */
+  /* border-bottom: 1px solid #d1a954; */
+  background-size: cover;
+  background-position: center;
 }
