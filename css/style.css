@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  background-color: #ffffff;
+  background: #333;
 }
 
 /* HEADER */
@@ -648,18 +648,68 @@ header {
   margin-bottom: 40px;
 }
 
+/* DOCUMENTS */
+.documents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3%;
+  padding: 50px;
+}
+
+.document {
+  border: 1px solid #d1aa544f;
+  text-decoration: none;
+  height: 200px;
+  padding: 30px;
+  border-radius: 10px;
+  color: #989898;
+  display: block;
+}
+
+.document:hover {
+  box-shadow: 0 0 10px #c0a671;
+  transition: 500ms;
+}
+
+.document h3 {
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+
+.document p {
+  font-size: 13px;
+  color: #989898;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .documents {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .document {
+    margin-bottom: 40px;
+  }
+  
+  .document h3 {
+    padding-bottom: 20px;
+  }
+}
+
 /* FOOTER */
 .footer {
-  background: #333;
+  background: #313131;
+  margin-top: 70px;
   color: #d3d3d3;
   height: 170px;
   position: bottom;
-  border-top: 1px solid #d1a954;
 }
 
 .footer .footer-bottom {
-  background-color: #343a40;
+  background: #313131;
   color: #686868;
+  border-top: 1px solid #686868;
   text-align: center;
   height: 50px;
   /* position: absolute; */
