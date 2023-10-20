@@ -650,10 +650,11 @@ header {
 
 /* FOOTER */
 .footer {
-  background: #303036;
+  background: #333;
   color: #d3d3d3;
   height: 170px;
   position: bottom;
+  border-top: 1px solid #d1a954;
 }
 
 .footer .footer-bottom {
