@@ -20,6 +20,7 @@ body {
   margin: auto;
   max-width: 1200px;
   padding: 10px;
+  height: 70px
 }
 
 header {
@@ -745,4 +746,43 @@ header {
 .footer-text {
   font-variant: initial;
   font-size: 1.5em;
+}
+
+/* Новости */
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-title {
+  color: #ffbf00;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-date {
+  color: #ffbf00;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.news-description {
+  color: #333;
+  font-size: 16px;
+}
+
+.news-main-header div {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.143), #333), */
+    /* url(../images/main.jpg); */
+  /* height: 100vh; */
+  /* border-bottom: 1px solid #d1a954; */
+  background-size: cover;
+  background-position: center;
 }
