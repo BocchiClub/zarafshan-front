@@ -27,7 +27,7 @@ body {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.143), #333),
     url(../images/main.jpg);
-  height: 100vh;
+  height: 80vh;
   /* border-bottom: 1px solid #d1a954; */
   background-size: cover;
   background-position: center;
@@ -138,7 +138,7 @@ header {
 /* TITLE */
 .title {
   position: absolute;
-  top: 50%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
