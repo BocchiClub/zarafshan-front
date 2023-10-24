@@ -27,7 +27,7 @@ body {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.143), #333),
     url(../images/main.jpg);
-  height: 80vh;
+  height: 60vh;
   /* border-bottom: 1px solid #d1a954; */
   background-size: cover;
   background-position: center;
