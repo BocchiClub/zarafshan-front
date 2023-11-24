@@ -48,21 +48,22 @@
     <div class="login-wrapper">
       <h2 class="login-title">Войти</h2>
       <div class="form-send">
-        <form action="php/mail.php" method="post" class="form-text-input">
+        <form id="loginForm" class="form-text-input">
           <div class="login-form">
             <div class="login-form-item">
-              <p>Email</p>
-              <input type='text' id="email" name="email" class="form-input" required></textarea>
+              <p>Username</p>
+              <input type='text' id="username" name="username" class="form-input" required>
             </div>
             <div class="login-form-item">
               <p>Пароль</p>
-              <input type="password" id="password" name="password" class="form-input" required></textarea>
+              <input type="password" id="password" name="password" class="form-input" required>
             </div>
           </div>
         </form>
       </div>
+      <div class="error-message" id="errorMessage"></div>
       <div class="button-login">
-        <button type='submit' value='Отправить' class="button">
+        <button type='button' onclick="submitForm()" class="button">
           Отправить
         </button>
       </div>
@@ -90,6 +91,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/login.js"></script>
 </body>
 
 </html>
