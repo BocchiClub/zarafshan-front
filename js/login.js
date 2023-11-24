@@ -6,13 +6,20 @@ function submitForm() {
         body: formData
     })
     .then(response => {
-      response.json()
       if (response.status == 200) {
-        // Авторизация успешна, перенаправляем на главную страницу
+        // Successful authorization
+    
+        // Get the username value from the response
+        var username = formData.get("username");
+    
+        // Store the username in local storage
+        localStorage.setItem('username', username);
+        // console.log(username);
+        // Redirect to the main page
         window.location.href = 'index.html';
       } else {
-          // Ошибка авторизации, выводим сообщение
-          document.getElementById('errorMessage').innerText = 'Неверный логин или пароль';
+        // Authorization error, display a message
+        document.getElementById('errorMessage').textContent = 'Неверный логин или пароль';
       }
     })
     .then(data => console.log(data))
