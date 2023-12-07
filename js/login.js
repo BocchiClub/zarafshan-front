@@ -11,13 +11,17 @@ function submitForm() {
         var username = formData.get("username");
 
         localStorage.setItem('username', username);
-
-        window.location.href = 'index.html';
+        return response.json();
       } else {
         document.getElementById('errorMessage').textContent = 'Неверный логин или пароль';
       }
     })
-    .then(data => console.log(data))
+    .then(data => {
+      console.log(data);
+      var token = data.access_token;
+      localStorage.setItem('token', token);
+      window.location.href = 'index.html';
+    })
     .catch(error => {
       console.error('Ошибка при отправке запроса:', error);
     });
