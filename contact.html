@@ -28,7 +28,7 @@
           </li>
           <li class="active main-list-item dropdown">
             <a href="javascript:void(0);" class="main-item">Меню</a>
-            <ul class="dropdown-content">
+            <ul class="dropdown-content" id="main-menu">
               <li><a href="news.html" class="main-item">Все новости</a></li>
               <li><a href="calendar.html" class="main-item">Календарь событий</a></li>
               <li><a href="tourism.html" class="main-item">Туризм</a></li>
@@ -64,16 +64,17 @@
             <div class="contact-text"> 2 микрорайон, 8 строение</div>
           </div>
         </div>
-        <form method="post" class="form-text-input">
+        <form id="contactForm" class="form-text-input">
           <div class="contact-form">
-            <textarea placeholder='Имя' name='name' class="form-input" required></textarea>
-            <textarea placeholder='Фамилия' name='lasname' class="form-input"></textarea>
-            <textarea placeholder='Телефон' name='phone' class="form-input"></textarea>
-            <textarea placeholder='E-mail' name='email' class="form-input" required></textarea>
-            <textarea placeholder='Сообщение' name='message' class="form-input-mess" required></textarea>
+            <input placeholder='Имя' name='name' class="form-input"></input>
+            <input placeholder='Фамилия' name='lastname' class="form-input"></input>
+            <input placeholder='Телефон' name='phone' class="form-input"></input>
+            <input placeholder='E-mail' name='email' class="form-input"></input>
+            <input placeholder='Сообщение' name='message' id="message" class="form-input-mess" required></input>
           </div>
+          <div class="error-message" id="errorMessage"></div>
           <div class="button-info">
-            <button type='submit' value='Отправить' class="button">
+            <button type='button' value='Отправить' onclick="sendrequest()" class="button">
               Отправить
             </button>
           </div>
@@ -109,6 +110,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/request_user.js"></script>
   <script src="js/main.js"></script>
   <script src="js/storage.js"></script>
 </body>
