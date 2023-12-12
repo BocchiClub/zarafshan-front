@@ -8,19 +8,21 @@ function logout() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Retrieve the stored username from local storage
-    var username = localStorage.getItem('username');
-  
-    // Update the text content of the login link with the username
-    if (username) {
-      document.getElementById('loginLink').textContent = username;
-      var listItem = document.createElement('li');
-      var logoutButton = document.createElement('a');
-      logoutButton.id = 'logoutButton';
-      logoutButton.className = 'main-item';
-      logoutButton.textContent = 'Выйти';
-      logoutButton.addEventListener('click', logout);
-      listItem.appendChild(logoutButton);
-      document.getElementById('main-menu').appendChild(listItem);
-    }
-  });
+  // Retrieve the stored username from local storage
+  var username = localStorage.getItem('username');
+
+  // Update the text content and href attribute of the login link with the username
+  if (username) {
+    document.getElementById('loginLink').textContent = username;
+    document.getElementById('loginLink').href = 'personal.html';
+
+    var listItem = document.createElement('li');
+    var logoutButton = document.createElement('a');
+    logoutButton.id = 'logoutButton';
+    logoutButton.className = 'main-item';
+    logoutButton.textContent = 'Выйти';
+    logoutButton.addEventListener('click', logout);
+    listItem.appendChild(logoutButton);
+    document.getElementById('main-menu').appendChild(listItem);
+  }
+});
