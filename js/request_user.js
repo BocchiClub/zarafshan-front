@@ -95,7 +95,9 @@ function getRequests() {
         requestsDiv.appendChild(requestInfo);
         if (isAdmin) {
           var addResponseBtn = document.createElement('button');
+          addResponseBtn.className = "button";
           addResponseBtn.textContent = 'Добавить ответ';
+          addResponseBtn.id = 'buttonContainer';
           addResponseBtn.addEventListener('click', function() {
             addResponseForm(request.id, requestInfo);
           });
@@ -130,11 +132,13 @@ function addResponseForm(requestId, requestInfo) {
   var responseInput = document.createElement('input');
   responseInput.id = 'response-input';
   responseInput.type = 'text';
+  responseInput.className = 'form-input';
   responseInput.placeholder = 'Введите ответ...';
   responseForm.appendChild(responseInput);
 
   var sendResponseBtn = document.createElement('button');
   sendResponseBtn.textContent = 'Отправить';
+  sendResponseBtn.className = "button";
   responseForm.appendChild(sendResponseBtn);
 
   responseFormWrapper.appendChild(responseForm);
