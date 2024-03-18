@@ -1,5 +1,4 @@
-// Функция для загрузки и обработки CSV-файла
-function loadCSV() {
+function loadNews() {
   fetch("http://127.0.0.1:5000/news/authority")
     .then(response => response.json())
     .then(newsList => {
@@ -71,5 +70,4 @@ function padZero(number) {
   return number.toString().padStart(2, '0');
 }
 
-// Запустите загрузку CSV-файла и создание новостей
-loadCSV();  
+loadNews();  
