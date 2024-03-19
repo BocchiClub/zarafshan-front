@@ -7,12 +7,20 @@ function loadNews() {
           const newsItem = document.createElement("div");
           newsItem.className = "news-item";
 
+          const newsMeta = document.createElement("div");
+          newsMeta.className = "news-meta";
+
           const dateElement = document.createElement("p");
           const newsDate = new Date(news.date);
           const formattedDate = `${padZero(newsDate.getDate())}.${padZero(
             newsDate.getMonth() + 1
           )}.${newsDate.getFullYear()}`;
           dateElement.textContent = formattedDate;
+
+          const tagElement = document.createElement("span");
+          tagElement.textContent = `${news.tag}`;
+          newsMeta.appendChild(dateElement);
+          newsMeta.appendChild(tagElement);
 
           const descriptionElement = document.createElement("h3");
           const newsLink = document.createElement("a");
@@ -21,7 +29,7 @@ function loadNews() {
           descriptionElement.appendChild(newsLink);
 
           newsItem.appendChild(descriptionElement);
-          newsItem.appendChild(dateElement);
+          newsItem.appendChild(newsMeta);
 
           const organsColumn = document.getElementById("organs");
           organsColumn.appendChild(newsItem);
@@ -31,7 +39,7 @@ function loadNews() {
     .catch(error => {
       console.error(error);
     });
-  
+
   fetch("http://127.0.0.1:5000/news/society")
     .then(response => response.json())
     .then(newsList => {
@@ -40,12 +48,20 @@ function loadNews() {
           const newsItem = document.createElement("div");
           newsItem.className = "news-item";
 
+          const newsMeta = document.createElement("div");
+          newsMeta.className = "news-meta";
+
           const dateElement = document.createElement("p");
           const newsDate = new Date(news.date);
           const formattedDate = `${padZero(newsDate.getDate())}.${padZero(
             newsDate.getMonth() + 1
           )}.${newsDate.getFullYear()}`;
           dateElement.textContent = formattedDate;
+
+          const tagElement = document.createElement("span");
+          tagElement.textContent = `${news.tag}`;
+          newsMeta.appendChild(dateElement);
+          newsMeta.appendChild(tagElement);
 
           const descriptionElement = document.createElement("h3");
           const newsLink = document.createElement("a");
@@ -54,7 +70,7 @@ function loadNews() {
           descriptionElement.appendChild(newsLink);
 
           newsItem.appendChild(descriptionElement);
-          newsItem.appendChild(dateElement);
+          newsItem.appendChild(newsMeta);
 
           const societyColumn = document.getElementById("society");
           societyColumn.appendChild(newsItem);
