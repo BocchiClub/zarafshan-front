@@ -450,6 +450,19 @@ header {
   grid-gap: 40px;
 }
 
+.news-meta {
+  display: flex;
+  align-items: center;
+}
+
+.news-meta span {
+  padding: 5px;
+  margin-left: 20px;
+  border: 1px solid #d1a954;
+  border-radius: 5px;
+}
+
+
 .news-item {
   color: #989898;
   margin: 20px 0;
