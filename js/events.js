@@ -1,7 +1,4 @@
-// events.js
-
-// Загрузка JSON-файла с мероприятиями
-fetch('events.json')
+fetch('http://127.0.0.1:5000/events')
   .then(response => response.json())
   .then(events => {
     const eventsByDate = {};
