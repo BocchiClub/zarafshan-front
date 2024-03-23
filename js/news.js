@@ -1,5 +1,5 @@
 function loadNews() {
-  fetch("http://127.0.0.1:5000/news/authority")
+  fetch("http://127.0.0.1:5000/news/category/authority")
     .then(response => response.json())
     .then(newsList => {
       if (newsList && newsList.length > 0) {
@@ -40,7 +40,7 @@ function loadNews() {
       console.error(error);
     });
 
-  fetch("http://127.0.0.1:5000/news/society")
+  fetch("http://127.0.0.1:5000/news/category/society")
     .then(response => response.json())
     .then(newsList => {
       if (newsList && newsList.length > 0) {
